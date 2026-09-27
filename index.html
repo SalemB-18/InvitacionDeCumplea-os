@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Invitación de Evangeline</title>
+
+    <!-- Tipografía parecida a la del modelo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="invitacion">
+
+    <!-- ESTRELLAS QUE CAEN -->
+    <div id="lluvia-estrellas"></div>
+    
+    <!-- ==================== SECCIÓN CELESTE ==================== -->
+    <section class="section section-sky">
+
+        <!-- ARCOÍRIS IZQUIERDA -->
+        <svg class="illustration rainbow" viewBox="0 0 120 70" fill="none">
+            <path d="M 10 60 A 50 50 0 0 1 110 60" stroke="#FF6B6B" stroke-width="8" stroke-linecap="round"/>
+            <path d="M 22 60 A 38 38 0 0 1 98 60" stroke="#FFD166" stroke-width="8" stroke-linecap="round"/>
+            <path d="M 34 60 A 26 26 0 0 1 86 60" stroke="#06D6A0" stroke-width="8" stroke-linecap="round"/>
+            <path d="M 46 60 A 14 14 0 0 1 74 60" stroke="#118AB2" stroke-width="8" stroke-linecap="round"/>
+        </svg>
+
+        <!-- SOL DERECHA -->
+        <svg class="illustration sun" viewBox="0 0 100 100" fill="none">
+            <circle cx="50" cy="50" r="22" fill="#FFD166" stroke="#F4A261" stroke-width="3" />
+            <path d="M50 15V5 M50 95V85 M15 50H5 M95 50H85 M25 25L17 17 M83 83L75 75 M25 75L17 83 M83 17L75 25" stroke="#F4A261" stroke-width="4" stroke-linecap="round" />
+            <circle cx="43" cy="45" r="2" fill="#2B2D42"/>
+            <circle cx="57" cy="45" r="2" fill="#2B2D42"/>
+            <path d="M43 55 Q 50 62 57 55" stroke="#2B2D42" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg>
+
+        <div class="hero-container">
+            <!-- TEXTOS -->
+            <div class="hero-text">
+                <span class="sub-tag">VEN A DIVERTIRTE!</span>
+                <h1>¡Te invito a mi fiesta!</h1>
+                <p>¡Hola! Llegó el momento de celebrar un año más y quiero que seas parte de este día tan especial. Estás súper invitado/a a mi cumple. Ven preparado para bailar, jugar y comer mucho pastel, porque ¡nos divertiremos un montón!</p>
+                
+                <div class="div-buttons">
+                    <button class="btn-music" onclick="toggleMusic()">
+                        <span class="btn-icon-play">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </span>
+                        Escuchar música
+                    </button>
+                </div>
+
+                <!-- Único reproductor de audio local oculto y limpio -->
+                <audio id="peppa-audio" src="peppa.mp3.mp3" loop></audio>
+            </div>
+
+            <!-- IMAGEN DIRECTA Y CERCA DEL TEXTO -->
+            <div class="hero-image">
+                <img src="">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- LOGO EVANGELINE -->
+    <img src="IMG/PEPITA.png" class="logo" alt="Evangeline">
+
+    <!-- FRASE -->
+    <h1 class="titulo">
+        ¡Te esperamos el!
+    </h1>
+
+    <!-- FECHA -->
+    <div class="zona-fecha">
+
+        <!-- YORCH (A LA IZQUIERDA) -->
+        <img src="IMG/yorch.webp" class="personaje george" alt="George Pig">
+
+        <!-- CUADRO FECHA CENTRAL -->
+        <div class="fecha">
+            <div class="dia-semana">Sábado</div>
+            <div class="numero">03</div>
+            <div class="mes">Octubre</div>
+        </div>
+
+        <!-- PEPPA (A LA DERECHA) -->
+        <img src="IMG/giphy (2).webp" class="personaje peppa" alt="Peppa Pig">
+
+    </div>
+
+    <!-- CONTADOR -->
+     <div class="contador-titulo">¡FALTA POCO!</div>
+    <div class="contador">
+      <div class="tiempo"><strong id="dias">00</strong><small>DÍAS</small></div>
+      <div class="tiempo"><strong id="horas">00</strong><small>HORAS</small></div>
+      <div class="tiempo"><strong id="minutos">00</strong><small>MIN</small></div>
+      <div class="tiempo"><strong id="segundos">00</strong><small>SEG</small></div>
+    </div>
+
+    <!-- HORARIO -->
+    <div class="horario">
+        de 6:30 a 9:0pm
+    </div>
+
+    <!-- CONTENEDOR DE BOTONES (DIRECCIÓN Y CONFIRMAR) -->
+    <div class="contenedor-botones">
+        <a href="https://maps.app.goo.gl/VvNTJQUYTVemQ4FJ6?g_st=aw" target="_blank" class="btn-location">
+            <img src="IMG/ubicacion.png" alt="Icono Ubicación">
+            DIRECCIÓN
+        </a>
+
+        <a href="https://wa.me/51944733679?text=¡Hola!%20Confirmo%20mi%20asistencia%20al%20cumpleaños%20de%20Evangeline%20🎉" target="_blank" class="btn-confirmar">
+            <img src="IMG/whasa.png" alt="Icono WhatsApp">
+            CONFIRMAR
+        </a>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
